@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+.clasprc.json
+
+# Data exports: real data stays in Google Drive
+*.xlsx
+*.xls
+*.csv
+*.tsv
+exports/
+# Synthetic samples in examples/ folders are allowed
+!**/examples/**/*.csv
+!**/examples/**/*.tsv
+!**/examples/**/*.xlsx
+!**/examples/**/*.xls
+
+# Build and tooling
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
